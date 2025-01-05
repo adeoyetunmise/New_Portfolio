@@ -1,0 +1,62 @@
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
+
+
+
+
+const MyProject = () => {
+    const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  const projects = [
+    {
+      title: "E-Commerce Website",
+      details: "An online store built with React, Node.js, and MongoDB. Features include product search, cart management, and secure checkout.",
+      link: "https://myecommerceproject.com",
+    },
+    {
+      title: "Portfolio Website",
+      details: "A personal portfolio showcasing my skills and projects. Built with React and styled using Tailwind CSS.",
+      link: "https://myportfolio.com",
+    },
+    {
+      title: "Task Manager App",
+      details: "A productivity app for task management. Built with React and Express, featuring real-time updates and notifications.",
+      link: "https://mytaskmanager.com",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center justify-center bg-gray-100 p-8 min-h-screen">
+      <h2 className="text-3xl font-bold mb-8">What I've Built</h2>
+      <div
+        ref={ref}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl"
+      >
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            initial={{ y: -100, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          >
+            <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
+            <p className="text-gray-700 mb-4">{project.details}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-500 font-bold hover:underline"
+            >
+              View Project
+            </a>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default MyProject

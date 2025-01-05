@@ -1,0 +1,12 @@
+/* Slide-in animation */
+.slide-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+  }
+  
+  .slide-in-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
