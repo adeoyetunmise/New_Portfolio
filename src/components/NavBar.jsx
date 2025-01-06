@@ -57,7 +57,7 @@ const NavBar = () => {
           <motion.a
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
-           href="https://drive.google.com/file/d/1zVU8EGcPgKk0DPNxUm1CyEcHBw3Y5ekE/view?usp=sharing" className="text-white text-xl bg-sky-500 rounded px-2 py-1 hover:text-white">
+           href="https://drive.google.com/file/d/117Db4L6Jh0jNo89iVgwkQb-hxN7ZOkx6/view?usp=sharing" className="text-white text-xl bg-sky-500 rounded px-2 py-1 hover:text-white">
             View Resume
           </motion.a>
         </div>
@@ -65,7 +65,7 @@ const NavBar = () => {
 
       {/* Mobile menu (hidden by default) */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden text-black p-4 space-y-4">
+        <div className="lg:hidden text-black p-4 space-y-3">
             <a href="/mainpage" className="block hover:text-blue-300">
             Home
           </a>
@@ -78,6 +78,13 @@ const NavBar = () => {
           <a href="#contact" className="block hover:text-blue-300">
             Contact
           </a>
+
+          <motion.a
+          whileHover={{scale: 1.1}}
+          whileTap={{scale: 0.9}}
+           href="https://drive.google.com/file/d/117Db4L6Jh0jNo89iVgwkQb-hxN7ZOkx6/view?usp=sharing" className="text-white  bg-sky-500  rounded px-1 py-1 hover:text-white">
+            View Resume
+          </motion.a>
         </div>
       )}
     </nav>
