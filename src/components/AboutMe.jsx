@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { GoGitCommit } from "react-icons/go";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import tenaImage from "../assets/tena.jpg"; // Adjust the path as needed
+import { useLocation } from "react-router-dom";
 
 const AboutMe = () => {
+const Location = useLocation();
+
+useEffect(() => {
+  // Check for hash in the URL
+  if (location.hash) {
+    const id = location.hash.substring(1); // Remove the "#" from the hash
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, [location]);
+
   // Setup useInView hooks for sections
   const { ref: textRef, inView: textInView } = useInView({
     threshold: 0.2, // Trigger when 20% of the section is visible
@@ -25,7 +39,7 @@ const AboutMe = () => {
         ))}
       </div>
 
-      <h1 className="text-center text-3xl font-bold mt-1">About Me</h1>
+      <h1 id="about-section" className="text-center text-3xl font-bold mt-1">About Me</h1>
 
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-8 gap-8">
         {/* Text Section */}

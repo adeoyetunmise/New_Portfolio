@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { FaFireFlameCurved } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -15,7 +16,7 @@ const NavBar = () => {
       <div className="max-w-7xl mx-auto flex items-center p-7 justify-between">
         {/* Logo Section */}
         <div className="text-black text-2xl font-semibold flex items-center ">
-          <a href="">Adeoye Tunmise</a>
+          <a href="/mainpage">Adeoye Tunmise</a>
           <FaFireFlameCurved className='text-sky-700' />
         </div>
 
@@ -41,12 +42,12 @@ const NavBar = () => {
 
         {/* Navbar links (visible on large screens) */}
         <div className="hidden lg:flex space-x-6">
-        <a href="#about" className="text-black text-lg hover:text-blue-300">
+        <a href="/mainpage" className="text-black text-lg hover:text-blue-300">
             Home
           </a>
-          <a href="#about" className="text-black text-lg hover:text-blue-300">
+          <Link to = "/about#about-section" className="text-black text-lg hover:text-blue-300">
             About
-          </a>
+          </Link>
           <a href="#projects" className="text-black text-lg hover:text-blue-300">
             Projects
           </a>
