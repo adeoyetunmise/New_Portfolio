@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:text-blue-400 transition">
+                <a href="#project" className="hover:text-blue-400 transition">
                   Projects
                 </a>
               </li>
@@ -53,17 +53,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a href="mailto:email@example.com" className="hover:text-blue-400 transition">
-                  email@example.com
+                  adeoyetunmise53@gmail.com
                 </a>
               </li>
               <li>
                 <a href="tel:+1234567890" className="hover:text-blue-400 transition">
-                  +123 456 7890
+                  +234 903 090 6361
                 </a>
               </li>
               <li>
                 <span className="hover:text-blue-400 transition">
-                  123 Street Name, City, Country
+                  Lagos, Nigeria
                 </span>
               </li>
             </ul>

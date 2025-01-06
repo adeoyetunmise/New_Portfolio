@@ -58,7 +58,7 @@ const HeroPage = () => {
         </h1>
         <h1 className="text-2xl font-extrabold text-gray-800">I'm Adeoye Tunmise</h1>
         
-        <p className="text-sky-500 font-bold text-6xl">
+        <p className="text-sky-500 font-bold text-5xl">
           {typedText}
           <span
         className={`${
