@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion} from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { GoGitCommit } from "react-icons/go";
+
+
 
 
 
@@ -32,6 +35,12 @@ const MyProject = () => {
 
   return (
     <div id='project' className="flex flex-col items-center justify-center bg-gray-100 p-8 min-h-screen">
+
+<div className="text-sky-600 flex items-center justify-center mt-5">
+        {[...Array(4)].map((_, index) => (
+          <GoGitCommit key={index} className="text-3xl" aria-label="Git Commit Icon" />
+        ))}
+      </div>
       <h2 className="text-3xl font-bold mb-8">What I've Built</h2>
       <div
         ref={ref}

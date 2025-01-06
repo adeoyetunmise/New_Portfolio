@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi';
+import { GoGitCommit } from "react-icons/go";
+
 
 const ContactForm = () => {
   const { ref, inView } = useInView({
@@ -10,7 +12,13 @@ const ContactForm = () => {
   });
 
   return (
+    
     <section className="py-16 bg-gray-100" id="contact" ref={ref}>
+        <div className="text-sky-600 flex items-center justify-center mt-5">
+        {[...Array(4)].map((_, index) => (
+          <GoGitCommit key={index} className="text-3xl" aria-label="Git Commit Icon" />
+        ))}
+      </div>
         <div className="max-w-7xl mx-auto text-center mb-12">
         {/* Contact Me Header */}
         <motion.h1

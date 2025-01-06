@@ -11,6 +11,8 @@ import {
   FaGithub,
 } from 'react-icons/fa';
 import { SiTailwindcss,  SiBootstrap } from 'react-icons/si';
+import { GoGitCommit } from "react-icons/go";
+
 
 
 const SkillSet = () => {
@@ -34,6 +36,11 @@ const SkillSet = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-8 bg-gray-100 min-h-screen">
+        <div className="text-sky-600 flex items-center justify-center mt-5">
+        {[...Array(4)].map((_, index) => (
+          <GoGitCommit key={index} className="text-3xl" aria-label="Git Commit Icon" />
+        ))}
+      </div>
     <h2 className="text-3xl font-bold mb-8">My Tech Stack</h2>
     <div
       ref={ref}

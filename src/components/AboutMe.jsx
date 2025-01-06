@@ -35,7 +35,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="md:w-1/2 w-full flex flex-col gap-3 text-pretty text-black text-xl font-semibold"
+          className="md:w-1/2 w-full flex flex-col gap-3 md:text-pretty md:ml-14 text-black text-xl font-semibold"
         >
           <p className="font-bold text-sky-600 text-2xl">Hi, I’m Adeoye Tunmise.</p>
           <p>But you can call me Tena!😉</p>
@@ -67,7 +67,7 @@ const AboutMe = () => {
           <img
             src={tenaImage}
             alt="Adeoye Tunmise"
-            className="rounded-lg shadow-md "
+            className=" max-w-62 md:max-w-96 rounded-lg shadow-md "
           />
         </motion.div>
       </div>
