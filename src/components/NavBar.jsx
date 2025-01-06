@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { FaFireFlameCurved } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import { Link } from 'react-router-dom';
+
 
 const NavBar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,10 +45,10 @@ const NavBar = () => {
         <a href="/mainpage" className="text-black text-lg hover:text-blue-300">
             Home
           </a>
-          <Link to = "/about#about-section" className="text-black text-lg hover:text-blue-300">
+          <a href = "#about" className="text-black text-lg hover:text-blue-300">
             About
-          </Link>
-          <a href="#projects" className="text-black text-lg hover:text-blue-300">
+          </a>
+          <a href="#project" className="text-black text-lg hover:text-blue-300">
             Projects
           </a>
           <a href="#contact" className="text-black text-lg hover:text-blue-300">
@@ -66,13 +66,13 @@ const NavBar = () => {
       {/* Mobile menu (hidden by default) */}
       {isMobileMenuOpen && (
         <div className="lg:hidden text-black p-4 space-y-4">
-            <a href="#about" className="block hover:text-blue-300">
+            <a href="/mainpage" className="block hover:text-blue-300">
             Home
           </a>
           <a href="#about" className="block hover:text-blue-300">
             About
           </a>
-          <a href="#projects" className="block hover:text-blue-300">
+          <a href="#project" className="block hover:text-blue-300">
             Projects
           </a>
           <a href="#contact" className="block hover:text-blue-300">

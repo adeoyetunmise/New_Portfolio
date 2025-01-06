@@ -1,24 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { GoGitCommit } from "react-icons/go";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import tenaImage from "../assets/tena.jpg"; // Adjust the path as needed
-import { useLocation } from "react-router-dom";
 
 const AboutMe = () => {
-const Location = useLocation();
-
-useEffect(() => {
-  // Check for hash in the URL
-  if (location.hash) {
-    const id = location.hash.substring(1); // Remove the "#" from the hash
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-}, [location]);
-
   // Setup useInView hooks for sections
   const { ref: textRef, inView: textInView } = useInView({
     threshold: 0.2, // Trigger when 20% of the section is visible
@@ -32,6 +18,7 @@ useEffect(() => {
 
   return (
     <>
+      <div id="about">
       {/* Icons Section */}
       <div className="text-sky-600 flex items-center justify-center mt-5">
         {[...Array(4)].map((_, index) => (
@@ -39,7 +26,7 @@ useEffect(() => {
         ))}
       </div>
 
-      <h1 id="about-section" className="text-center text-3xl font-bold mt-1">About Me</h1>
+      <h1 className="text-center text-3xl font-bold mt-1">About Me</h1>
 
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-8 gap-8">
         {/* Text Section */}
@@ -83,6 +70,7 @@ useEffect(() => {
             className="max-w-96 rounded-lg shadow-md md:ml-32"
           />
         </motion.div>
+      </div>
       </div>
     </>
   );

@@ -1,13 +1,16 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React from 'react';
+import { motion} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 
 
 
 
 const MyProject = () => {
-    const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+   const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   const projects = [
     {
@@ -28,7 +31,7 @@ const MyProject = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-gray-100 p-8 min-h-screen">
+    <div id='project' className="flex flex-col items-center justify-center bg-gray-100 p-8 min-h-screen">
       <h2 className="text-3xl font-bold mb-8">What I've Built</h2>
       <div
         ref={ref}
@@ -38,7 +41,7 @@ const MyProject = () => {
           <motion.div
             key={index}
             initial={{ y: -100, opacity: 0 }}
-            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            animate={inView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
