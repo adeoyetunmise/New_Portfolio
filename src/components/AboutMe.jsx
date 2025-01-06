@@ -18,7 +18,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <div id="about">
+      <div id="about ">
       {/* Icons Section */}
       <div className="text-sky-600 flex items-center justify-center mt-5">
         {[...Array(4)].map((_, index) => (
@@ -67,7 +67,7 @@ const AboutMe = () => {
           <img
             src={tenaImage}
             alt="Adeoye Tunmise"
-            className="max-w-96 rounded-lg shadow-md md:ml-32"
+            className="rounded-lg shadow-md "
           />
         </motion.div>
       </div>
