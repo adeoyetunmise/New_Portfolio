@@ -18,7 +18,7 @@ const AboutMe = () => {
 
   return (
     <>
-      <div id="about ">
+      <div id="about">
       {/* Icons Section */}
       <div className="text-sky-600 flex items-center justify-center mt-5">
         {[...Array(4)].map((_, index) => (
@@ -35,7 +35,7 @@ const AboutMe = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="md:w-1/2 w-full flex flex-col gap-3 ml-14 text-black text-xl font-semibold"
+          className="md:w-1/2 w-full flex flex-col gap-3 text-pretty text-black text-xl font-semibold"
         >
           <p className="font-bold text-sky-600 text-2xl">Hi, I’m Adeoye Tunmise.</p>
           <p>But you can call me Tena!😉</p>
