@@ -24,6 +24,11 @@ const Footer = () => {
                 <a href="#contact" className="hover:text-blue-400 transition">
                   Contact
                 </a>
+                </li>
+                <li>
+                <a href="https://drive.google.com/file/d/117Db4L6Jh0jNo89iVgwkQb-hxN7ZOkx6/view?usp=sharing" className="hover:text-blue-400 transition">
+                  Resume
+                </a>
               </li>
             </ul>
           </div>
