@@ -2,6 +2,7 @@ import React from 'react'
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 import  { useState, useEffect } from "react";
+import heroImage from "../assets/tenacious.png"
 
 const variants = {
   hidden: { opacity: 0, x: -100 },
@@ -46,7 +47,7 @@ const HeroPage = () => {
       {/* Image Section */}
       <div className="md:w-1/2 w-full">
         <img
-          src="src/assets/tenacious.png"
+          src={heroImage}
           alt="Placeholder"
           className="w-80 rounded-3xl shadow-md md:ml-32"
         />
