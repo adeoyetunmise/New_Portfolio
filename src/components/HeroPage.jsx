@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 import  { useState, useEffect } from "react";
 import heroImage from "../assets/tenacious.png"
@@ -73,9 +73,15 @@ const HeroPage = () => {
 
 {/* Social Media Icons */}
 <div className="flex items-center gap-4 mt-4">
-          <FaFacebook className="text-blue-600 text-2xl cursor-pointer" />
-          <FaTwitter className="text-blue-400 text-2xl cursor-pointer" />
-          <FaInstagram className="text-pink-600 text-2xl cursor-pointer" />
+          <a href="https://web.facebook.com/tunmishe4christ"><FaFacebook  className="text-blue-600 text-2xl cursor-pointer" /></a>
+          <a href="https://www.instagram.com/adeoyetunmise/"><FaInstagram className="text-pink-600 text-2xl cursor-pointer" /></a>
+          <a href="https://github.com/adeoyetunmise"><FaTwitter className="text-blue-400 text-2xl cursor-pointer" /></a>
+          <a href="https://github.com"  className="text-black hover:text-black text-2xl cursor-pointer">
+          <FaGithub className="w-6 h-6" />
+          </a>
+          <a href="http://linkedin.com/in/tunmise-adeoye-7672b51b6" className="text-blue-600 hover:text-blue-600 text-2xl cursor-pointer">
+          <FaLinkedin className="w-6 h-6" />
+          </a>
         </div>
 
 

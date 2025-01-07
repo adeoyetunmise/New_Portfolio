@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -37,16 +37,19 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
             <div className="flex space-x-6">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600 transition">
+            <a href="https://web.facebook.com/tunmishe4christ" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600 transition">
+            <FaFacebook  className="w-6 h-6" /></a>
+
+              <a href="http://linkedin.com/in/tunmise-adeoye-7672b51b6" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-600 transition">
                 <FaLinkedin className="w-6 h-6" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition">
+              <a href="https://github.com/adeoyetunmise" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-400 transition">
                 <FaGithub className="w-6 h-6" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition">
+              <a href="https://github.com/adeoyetunmise" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-400 transition">
                 <FaTwitter className="w-6 h-6" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-500 transition">
+              <a href="https://www.instagram.com/adeoyetunmise/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-pink-500 transition">
                 <FaInstagram className="w-6 h-6" />
               </a>
             </div>
