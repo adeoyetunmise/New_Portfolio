@@ -1,16 +1,10 @@
 import React from 'react';
-import { motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GoGitCommit } from "react-icons/go";
 
-
-
-
-
-
-
 const MyProject = () => {
-   const { ref, inView } = useInView({
+  const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2,
   });
@@ -19,24 +13,26 @@ const MyProject = () => {
     {
       title: "E-Commerce Website",
       details: "An online store built with React, Node.js, and MongoDB. Features include product search, cart management, and secure checkout.",
-      link: "https://myecommerceproject.com",
+      link: "https://ooja-client.vercel.app/",
+      imageSrc: "/src/assets/Ooja img2.png",
     },
     {
-      title: "Portfolio Website",
-      details: "A personal portfolio showcasing my skills and projects. Built with React and styled using Tailwind CSS.",
-      link: "https://myportfolio.com",
+      title: "Law Firm Dashboard",
+      details: "The law firm dashboard, built with React.js, Node.js, and MongoDB, offers a user-friendly interface for managing client information, tracking cases, scheduling appointments, and storing legal documents..",
+      link: "https://idyllic-cocada-c1ad21.netlify.app/",
+      imageSrc: "/src/assets/lawfirm.png",
     },
     {
       title: "Task Manager App",
       details: "A productivity app for task management. Built with React and Express, featuring real-time updates and notifications.",
       link: "https://mytaskmanager.com",
+      imageSrc: "/images/taskmanager.png",
     },
   ];
 
   return (
     <div id='project' className="flex flex-col items-center justify-center bg-gray-100 p-8 min-h-screen">
-
-<div className="text-sky-600 flex items-center justify-center mt-5">
+      <div className="text-sky-600 flex items-center justify-center mt-5">
         {[...Array(4)].map((_, index) => (
           <GoGitCommit key={index} className="text-3xl" aria-label="Git Commit Icon" />
         ))}
@@ -54,6 +50,13 @@ const MyProject = () => {
             transition={{ duration: 0.5, delay: index * 0.2 }}
             className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow"
           >
+            {project.imageSrc && (
+              <img
+                src={project.imageSrc}
+                alt={`${project.title} preview`}
+                className="mb-4 w-full h-40 object-cover rounded-md"
+              />
+            )}
             <h3 className="text-xl font-semibold mb-4">{project.title}</h3>
             <p className="text-gray-700 mb-4">{project.details}</p>
             <a
@@ -68,7 +71,7 @@ const MyProject = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default MyProject
+export default MyProject;

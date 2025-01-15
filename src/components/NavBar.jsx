@@ -42,22 +42,22 @@ const NavBar = () => {
 
         {/* Navbar links (visible on large screens) */}
         <div className="hidden lg:flex space-x-6">
-        <a href="/mainpage" className="text-black text-lg hover:text-blue-300">
+        <a href="/mainpage" className="text-black text-lg font-semibold hover:text-sky-800">
             Home
           </a>
-          <a href = "#about" className="text-black text-lg hover:text-blue-300">
+          <a href = "#about" className="text-black text-lg font-semibold hover:text-sky-800">
             About
           </a>
-          <a href="#project" className="text-black text-lg hover:text-blue-300">
+          <a href="#project" className="text-black text-lg font-semibold hover:text-sky-800">
             Projects
           </a>
-          <a href="#contact" className="text-black text-lg hover:text-blue-300">
+          <a href="#contact" className="text-black text-lg font-semibold hover:text-sky-800">
             Contact
           </a>
           <motion.a
           whileHover={{scale: 1.1}}
           whileTap={{scale: 0.9}}
-           href="https://drive.google.com/file/d/117Db4L6Jh0jNo89iVgwkQb-hxN7ZOkx6/view?usp=sharing" className="text-white text-xl bg-sky-500 rounded px-2 py-1 hover:text-white">
+           href="https://drive.google.com/file/d/1TwCjItmjJckdIiwWEsYHrVgovyoVipxI/view?usp=sharing" className="text-white text-xl bg-sky-500 rounded px-2 py-1 hover:text-white">
             View Resume
           </motion.a>
         </div>
