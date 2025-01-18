@@ -28,14 +28,14 @@ const AboutMe = () => {
 
       <h1 className="text-center text-3xl font-bold mt-1">About Me</h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-8 gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-between p-8 gap-36">
         {/* Text Section */}
         <motion.div
           ref={textRef}
           initial={{ opacity: 0, x: -50 }}
           animate={textInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="md:w-1/2 w-full flex flex-col gap-3 md:text-pretty md:ml-14 text-black text-xl font-semibold"
+          className="md:w-1/2 w-full flex flex-col item gap-3 md:text-pretty md:ml-14 text-black text-xl font-semibold"
         >
           <p className="font-bold text-sky-600 text-2xl">Hi, I’m Adeoye Tunmise.</p>
           <p>But you can call me Tena!😉</p>

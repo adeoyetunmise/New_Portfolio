@@ -23,10 +23,10 @@ const MyProject = () => {
       imageSrc: "/src/assets/lawfirm.png",
     },
     {
-      title: "Task Manager App",
-      details: "A productivity app for task management. Built with React and Express, featuring real-time updates and notifications.",
-      link: "https://mytaskmanager.com",
-      imageSrc: "/images/taskmanager.png",
+      title: "Interactive Multi-Step Form",
+      details: "A multi-step form built with React and Tailwind CSS, featuring interactive navigation and responsive design for selecting plans and add-ons.",
+      link: "https://clan-jobs-assessment.vercel.app/",
+      imageSrc: "/src/assets/multistep.png",
     },
   ];
 
