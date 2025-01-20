@@ -20,7 +20,7 @@ const MyProject = () => {
       title: "Law Firm Dashboard",
       details: "The law firm dashboard, built with React.js, Node.js, and MongoDB, offers a user-friendly interface for managing client information, tracking cases, scheduling appointments, and storing legal documents..",
       link: "https://idyllic-cocada-c1ad21.netlify.app/",
-      imageSrc: "/assets/lawfirm.png",
+      imageSrc: "/assets/lawFirm.png",
     },
     {
       title: "Interactive Multi-Step Form",
