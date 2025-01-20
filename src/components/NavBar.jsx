@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react';
 import { FaFireFlameCurved } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import ThemeToggleButton from './ThemeToggleButton';
+
 
 
 const NavBar = () => {
@@ -42,6 +44,7 @@ const NavBar = () => {
 
         {/* Navbar links (visible on large screens) */}
         <div className="hidden lg:flex space-x-6">
+        <ThemeToggleButton />
         <a href="/mainpage" className="text-black text-lg font-semibold hover:text-sky-800">
             Home
           </a>

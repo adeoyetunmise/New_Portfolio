@@ -6,10 +6,12 @@ import SkillSet from '../components/SkillSet'
 import MyProject from '../components/MyProject'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
+import { ThemeProvider } from '../context/ThemeContext.jsx';
 
 const MainPage = () => {
   return (
     <>
+    <ThemeProvider>
     <NavBar/>
     <HeroPage/>
     <AboutMe />
@@ -17,6 +19,7 @@ const MainPage = () => {
     <MyProject />
     <ContactForm />
     <Footer />
+    </ThemeProvider>
     </>
   )
 }
