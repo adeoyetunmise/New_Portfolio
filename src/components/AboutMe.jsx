@@ -2,7 +2,7 @@ import React from "react";
 import { GoGitCommit } from "react-icons/go";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import tenaImage from "../assets/tena.jpg"; // Adjust the path as needed
+// import tenaImage from "../assets/tena.jpg"; // Adjust the path as needed
 
 const AboutMe = () => {
   // Setup useInView hooks for sections
@@ -65,7 +65,7 @@ const AboutMe = () => {
           className="md:w-1/2 w-full"
         >
           <img
-            src={tenaImage}
+            src="/assets/tena.jpg"
             alt="Adeoye Tunmise"
             className=" max-w-62 md:max-w-96 rounded-lg shadow-md "
           />
