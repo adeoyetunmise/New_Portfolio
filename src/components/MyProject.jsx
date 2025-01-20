@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GoGitCommit } from "react-icons/go";
+import image1 from '../assets/Ooja img2.png';
+import image2 from '../assets/lawfirm.png';
+import image3 from '../assets/multistep.png';
 
 const MyProject = () => {
   const { ref, inView } = useInView({
@@ -14,19 +17,19 @@ const MyProject = () => {
       title: "E-Commerce Website",
       details: "An online store built with React, Node.js, and MongoDB. Features include product search, cart management, and secure checkout.",
       link: "https://ooja-client.vercel.app/",
-      imageSrc: "/assets/Ooja img2.png",
+      imageSrc: {image1},
     },
     {
       title: "Law Firm Dashboard",
       details: "The law firm dashboard, built with React.js, Node.js, and MongoDB, offers a user-friendly interface for managing client information, tracking cases, scheduling appointments, and storing legal documents..",
       link: "https://idyllic-cocada-c1ad21.netlify.app/",
-      imageSrc: "/assets/lawfirm.png",
+      imageSrc: {image2},
     },
     {
       title: "Interactive Multi-Step Form",
       details: "A multi-step form built with React and Tailwind CSS, featuring interactive navigation and responsive design for selecting plans and add-ons.",
       link: "https://clan-jobs-assessment.vercel.app/",
-      imageSrc: "/assets/multistep.png",
+      imageSrc: {image3},
     },
   ];
 
